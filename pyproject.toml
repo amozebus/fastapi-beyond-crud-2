@@ -1,0 +1,25 @@
+[project]
+name = "fastapi-beyond-crud-2"
+authors = [
+    {name = "amozebus", email = "amozebus@gmail.com"}
+]
+version = "0.1.0"
+description = "Successor of amozebus/fastapi-beyond-crud"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "alembic>=1.14.1",
+    "asyncpg>=0.30.0",
+    "bcrypt>=4.2.1",
+    "fastapi>=0.115.7",
+    "passlib>=1.7.4",
+    "pydantic-settings>=2.7.1",
+    "pyjwt>=2.10.1",
+    "sqlmodel>=0.0.22",
+    "uvicorn>=0.34.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=25.1.0",
+]
