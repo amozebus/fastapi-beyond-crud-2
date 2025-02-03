@@ -12,7 +12,7 @@ Users' passwords hashing with [BCrypt](https://en.wikipedia.org/wiki/Bcrypt) and
 
 </div>
 
-## How to launch
+## How to run
 
 1. Rename `.env.example` to `.env` and fill fields
 
@@ -38,8 +38,28 @@ pip install .
 alembic upgrade head
 ```
 
-3. Launch app:
+3. Run app:
 
 ```sh
 python src/main.py
+```
+
+### Docker
+
+2. Build Docker image:
+
+```sh
+docker build . --tag api
+```
+
+3. Run Docker image:
+
+```sh
+docker run -d api
+```
+
+4. Run database migrations:
+
+```sh
+docker exec {container id} alembic upgrade head
 ```
