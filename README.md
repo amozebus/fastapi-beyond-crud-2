@@ -29,7 +29,7 @@ Users' passwords hashing with [BCrypt](https://en.wikipedia.org/wiki/Bcrypt) and
 2. Install dependencies:
 
 ```sh
-pip install .
+pip install -r requirements.txt
 ```
 
 3. Run database migrations:
